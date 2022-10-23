@@ -1,0 +1,324 @@
+@font-face {
+  font-family: 'Satoshi';
+  src: url(../fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Italic.woff2),
+    url(../fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Italic.woff);
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url(../fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Light.woff2),
+    url(../fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Light.woff);
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url(../fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-LightItalic.woff2),
+    url(../fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-LightItalic.woff);
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url(../fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff2),
+    url(../fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url(../fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.woff2),
+    url(../fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.woff);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: 'Synonym';
+  src: url(../fonts/Synonym_Complete/Fonts/WEB/fonts/Synonym-Extralight.woff2),
+    url(../fonts/Synonym_Complete/Fonts/WEB/fonts/Synonym-Extralight.woff);
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Synonym';
+  src: url(../fonts/Synonym_Complete/Fonts/WEB/fonts/Synonym-Light.woff2),
+    url(../fonts/Synonym_Complete/Fonts/WEB/fonts/Synonym-Light.woff);
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Synonym';
+  src: url(../fonts/Synonym_Complete/Fonts/WEB/fonts/Synonym-Regular.woff2),
+    url(../fonts/Synonym_Complete/Fonts/WEB/fonts/Synonym-Regular.woff);
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+* {
+  outline: 1px red solid;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: #e5e5e5; */
+  text-rendering: optimizeLegibility;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+.page {
+  min-width: 1400px;
+  max-width: 1730px;
+  margin: 0 auto;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  color: #472425;
+}
+
+/* header */
+
+.header {
+  /* max-width: 1538px; */
+  max-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 160px;
+  padding: 30px 0 0 0;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: 'Synonym', sans-serif;
+  font-size: 39px;
+  line-height: 55px;
+}
+
+.logo_accent {
+  color: #ff7373;
+}
+
+.header__nav-links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+  left: 90px;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav-link {
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: lowercase;
+  color: #472425;
+}
+
+.header__language-choose {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.language {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.language:first-child {
+  margin-right: 24px;
+}
+
+.language_active {
+  color: #ff7373;
+}
+
+/* /header */
+
+/* main */
+
+.button {
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-family: 'Synonym', sans-serif;
+}
+
+.content {
+  display: block;
+}
+
+/* /main */
+
+/* main-illustration */
+
+.main-illustration {
+  position: relative;
+  height: 303px;
+  box-sizing: border-box;
+  background-image: url('../images/main-illustration.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 200px 200px 0 0;
+  margin-bottom: 157px;
+}
+
+.main-illustration__button {
+  width: 334px;
+  height: 84px;
+  position: absolute;
+  top: 109px;
+  right: 76px;
+  background: #fcfbf7;
+  border-radius: 126px;
+}
+
+.button_position {
+  text-align: right;
+  margin: 0 0 0 32px;
+}
+
+.main-illustration__button::before {
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  left: 32px;
+  top: 32px;
+  content: '';
+  background-image: url('../images/main-illustration__button.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* /main-illustration */
+
+/* hello */
+
+.hello {
+  display: flex;
+  justify-content: space-between;
+  height: 465px;
+}
+
+.hello_container_head {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.hello__heading {
+  font-family: 'Synonym';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 266px;
+  line-height: 66.7%;
+  letter-spacing: -0.049em;
+}
+
+.hello__subhead {
+  font-family: 'Synonym';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 71px;
+  line-height: 66.7%;
+  letter-spacing: -0.049em;
+  margin: 0 0 95px 0;
+}
+
+.hello__slogan {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 410px;
+  justify-content: space-between;
+  margin: 0 130px 0 0;
+}
+
+.hello__title {
+  font-family: 'Synonym';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 71px;
+  line-height: 66.7%;
+  letter-spacing: -0.049em;
+}
+
+.hello__title:last-of-type {
+  max-width: 180px;
+}
+
+.hello__design {
+  border-top: 3px solid #472425;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: baseline;
+  align-self: end;
+  padding: 18px 0 0 0;
+}
+
+.hello__subtitle {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
+  text-transform: lowercase;
+  text-align: justify;
+  margin: 0 0 38px 0;
+  height: fit-content;
+}
+
+.hello__subtitle_span {
+  margin: 0 32px;
+}
+
+.hello__text {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+  text-transform: lowercase;
+  margin: 0 0 12px 0;
+  color: rgba(71, 36, 37, 0.78);
+}
+
+.hello__text:last-child {
+  margin: 0;
+}
+
+.hello__desc {
+  width: 337px;
+}
+
+.hello__desc .hello__design {
+  margin: 151px 0 0 0;
+}
