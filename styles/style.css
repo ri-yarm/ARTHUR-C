@@ -86,6 +86,16 @@ body {
   user-select: none;
 }
 
+.button {
+  border: none;
+  background: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .page {
   min-width: 1400px;
   max-width: 1730px;
@@ -188,7 +198,6 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 200px 200px 0 0;
-  margin-bottom: 157px;
 }
 
 .main-illustration__button {
@@ -223,6 +232,8 @@ body {
 /* hello */
 
 .hello {
+  margin: 0;
+  padding: 160px 0;
   display: flex;
   justify-content: space-between;
   height: 465px;
@@ -308,10 +319,10 @@ body {
   line-height: 125%;
   text-transform: lowercase;
   margin: 0 0 12px 0;
-  color: rgba(71, 36, 37, 0.78);
+  color: rgba(71, 36, 37, 0.9);
 }
 
-.hello__text:last-child {
+.text:last-child {
   margin: 0;
 }
 
@@ -320,5 +331,114 @@ body {
 }
 
 .hello__desc .hello__design {
-  margin: 151px 0 0 0;
+  margin: 141px 0 0 0;
+}
+
+/* /.hello */
+
+/* example */
+
+.example {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  padding: 0 0 71px 0;
+}
+
+.image-container__el {
+  object-fit: contain;
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.example__subhead {
+  font-family: 'Synonym';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 66.7%;
+  letter-spacing: -0.049em;
+  text-transform: lowercase;
+  width: 705px;
+}
+
+.example__text {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 127.2%;
+  text-transform: lowercase;
+  margin: 0 0 8px 0;
+}
+
+.example__text:first-of-type {
+  font-weight: 500;
+}
+
+.example__text:last-of-type {
+  margin: 0;
+}
+
+.main__text {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 802px;
+  margin: 0 0 0 371px;
+}
+
+.button__fav {
+  position: absolute;
+  left: 35px;
+  top: 65px;
+  font-family: 'Synonym';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 98.69%;
+  color: #FF7373;
+  text-transform: lowercase;
+}
+
+.button__fav::before {
+  position: absolute;
+  left: -29px;
+  top: 0;
+  content: '';
+  background: url(../images/HeartFav.svg) no-repeat;
+  width: 28px;
+  height: 28px;
+}
+
+.button__arrow {
+  margin: 0 0 0 161px;
+}
+
+/* 55design */
+
+.design55 {
+  padding: 0 0 162px 0;
+}
+
+.lp-appatment {
+  padding: 0 0 162px 0;
+}
+
+.jdhouse {
+  padding: 0 0 128px 0;
+}
+
+.example__link {
+  color: #FF7373;
 }
